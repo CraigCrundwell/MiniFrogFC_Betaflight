@@ -1,6 +1,7 @@
+## MiniFrogFC Target
 This betaflight fork is for work creating a target for the MiniFrogFC brushed quadcopter flight controller which is currently under development.
 
-
+## F3 Compatibility
 
 ![Important Notice: Betaflight 4.0 will be the last release to include support for STM32F3 based flight controllers. (This includes all boards with 'F3' in the name.)](docs/assets/images/stm32f3_retirement_notice.svg)
 
