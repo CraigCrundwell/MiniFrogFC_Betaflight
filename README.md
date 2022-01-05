@@ -1,5 +1,5 @@
 ## MiniFrogFC Target
-This betaflight fork is for work creating a target for the MiniFrogFC brushed quadcopter flight controller which is currently under development.
+This betaflight fork is for the development of a custom target for the [MiniFrogFC](https://github.com/CraigCrundwell/MiniFrogFC) brushed quadcopter flight controller. 
 
 ## F3 Compatibility
 
