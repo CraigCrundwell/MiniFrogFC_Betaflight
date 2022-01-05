@@ -18,32 +18,20 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <stdint.h>
-
 #include "platform.h"
 
 #ifdef USE_TARGET_CONFIG
-#include "drivers/dma.h"
-#include "drivers/io.h"
-#include "drivers/timer.h"
 
-#include "config/feature.h"
+#include "common/axis.h"
 
-#include "fc/config.h"
+#include "flight/mixer.h"
+#include "flight/pid.h"
 
-#include "io/serial.h"
+#define BRUSHED_MOTORS_PWM_RATE 32000           // 32kHz
 
-#include "pg/rx.h"
 
-#include "rx/rx.h"
-
-#include "sensors/battery.h"
-
-// set default settings to match our target
 void targetConfiguration(void)
 {
-    const int index = findSerialPortIndexByIdentifier(PPM_PORT);
-    serialConfigMutable()->portConfigs[index].functionMask = FUNCTION_RX_SERIAL;
-
+    motorConfigMutable()->dev.motorPwmRate = BRUSHED_MOTORS_PWM_RATE;
 }
 #endif
